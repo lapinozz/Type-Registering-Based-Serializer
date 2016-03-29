@@ -4,6 +4,6 @@ This is a project I wanted to do to see if some ideas I had would work in practi
 
 # How it work
 
-{% highlight cpp %}
+```cpp
 char* i = (char*)"((2-3+2*(3-6)-1)/2.5)*(5+3^2)";using F=float;F z();F y(F a=z()){return*i==94?i++,y(pow(a,z())):a;}F x(F a=y()){return*i-47&&*i-42?a:x(*i++-47?a*y():a/y());}F w(F a=x()){return*i-45&&*i-43?a:w(a+x());}F z(){F r;return*i==40?i++,r=w(),i++,r:strtof(i,&i);}int main(){std::cout<<w();}
-{% endhighlight %}
+```
