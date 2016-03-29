@@ -110,7 +110,8 @@ SCENARIO("Serializer register types, nooooob", "[Serializer]")
 
 //    s.registerType<std::vector>(&std::vector::size(), &std::vector::resize());
 
-    s.addConversion<int, std::string>(intToString<int>);
+//    s.addConversion<int, std::string>(intToString<int>);
+    s.addConversion<int, std::string>(std::to_string);
     s.addConversion<std::string, int>(stringToInt);
     s.addConversion<double, int>();
     s.addConversion<int, double>();
